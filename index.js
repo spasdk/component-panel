@@ -42,7 +42,7 @@ function Panel ( config ) {
     config = config || {};
 
     console.assert(typeof this === 'object', 'must be constructed via new');
-    
+
     if ( DEVELOP ) {
         if ( typeof config !== 'object' ) { throw new Error(__filename + ': wrong config type'); }
         // init parameters checks
@@ -53,7 +53,7 @@ function Panel ( config ) {
     config.focusable = config.focusable || false;
 
     // set default className if classList property empty or undefined
-    config.className = 'panel ' + (config.className || '');
+    //config.className = 'panel ' + (config.className || '');
 
     // parent constructor call
     Component.call(this, config);
@@ -63,6 +63,9 @@ function Panel ( config ) {
 // inheritance
 Panel.prototype = Object.create(Component.prototype);
 Panel.prototype.constructor = Panel;
+
+// set component name
+Panel.prototype.name = 'spa-component-panel';
 
 
 // public

@@ -1,7 +1,14 @@
 // @license The MIT License (MIT)
 // @copyright Stanislav Kalashnik <darkpark.main@gmail.com>
 
-/* spa-component-panel: release */
-.component.panel {
-    background-color: #eee;
+@import "../node_modules/spa-component/sass/main";
+@import "body";
+
+.spa-component-panel {
+    @include spa-component-release;
+    @include spa-component-panel;
+
+    @if $DEVELOP {
+        @include spa-component-develop;
+    }
 }

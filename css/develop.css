@@ -1,3 +1,9 @@
-/* spa-component-panel: release */
-.component.panel {
-    background-color: #eee; }
+.spa-component-panel {
+    box-sizing: border-box;
+    background-color: #eee;
+    outline: 1px dashed #005000;
+    outline-offset: -1px; }
+    .spa-component-panel.hidden {
+        display: none; }
+    .spa-component-panel.focus {
+        outline: 1px dashed red; }
