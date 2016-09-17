@@ -70,4 +70,3 @@ Panel.prototype.name = 'spa-component-panel';
 
 // public
 module.exports = Panel;
-
